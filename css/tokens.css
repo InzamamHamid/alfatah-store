@@ -1,0 +1,70 @@
+/* ALFATAH design tokens
+   Derived from the Elevare capture (tokens.json / design/*.json) — palette, type
+   scale and shape are kept; only the identity on top of them changed. */
+
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("../assets/fonts/DMSerifDisplay-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../assets/fonts/LibreFranklin-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Libre Franklin";
+  src: url("../assets/fonts/LibreFranklin-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
+:root {
+  /* colour */
+  --c-bg: #f8f6f0;
+  --c-surface: #ffffff;
+  --c-ink: #726a63;
+  --c-ink-strong: #4a443f;
+  --c-ink-invert: #ffffff;
+  --c-accent: #b7786b;
+  --c-accent-deep: #965e52;
+  --c-olive: #6b714b;
+  --c-border: #e2ddd3;
+  --c-border-strong: #726a63;
+  --c-sale: #ec221f;
+  --c-muted: #9b938b;
+
+  /* type */
+  --f-display: "DM Serif Display", Georgia, serif;
+  --f-body: "Libre Franklin", ui-sans-serif, system-ui, sans-serif;
+  --t-hero: clamp(2.4rem, 1.4rem + 3.6vw, 3.75rem);
+  --t-h2: clamp(1.7rem, 1.2rem + 1.8vw, 2.5rem);
+  --t-h3: 1.25rem;
+  --t-body: 1rem;
+  --t-small: 0.875rem;
+  --t-micro: 0.7rem;
+  --lh-body: 1.6;
+
+  /* spacing — 8px base, matching the capture's padding steps */
+  --s-1: 0.5rem;
+  --s-2: 1rem;
+  --s-3: 1.5rem;
+  --s-4: 2rem;
+  --s-5: 2.5rem;
+  --s-6: 3.5rem;
+  --s-7: 5rem;
+
+  /* shape */
+  --r-sm: 12px;
+  --r-md: 24px;
+  --r-lg: 40px;
+  --r-pill: 999px;
+  --bw: 1px;
+
+  --shadow-card: 0 1px 2px rgba(74, 68, 63, 0.04), 0 12px 32px -20px rgba(74, 68, 63, 0.35);
+  --page: 1440px;
+  --gutter: clamp(1rem, 0.4rem + 2.4vw, 3.25rem);
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
